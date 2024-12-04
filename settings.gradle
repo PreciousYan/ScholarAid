@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }  // 添加华为云仓库
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }  // 添加华为云仓库
+    }
+}
+rootProject.name = "ScholarAid"
+include ':app'
