@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- PDF 显示区域 -->
+    <ImageView
+        android:id="@+id/imageViewPdf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="PDF Viewer" />
+
+    <!-- 标签输入框和添加标签按钮放在同一行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/tagInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter tag" />
+
+        <Button
+            android:id="@+id/btnAddTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Tag"
+            android:textColor="#FFFFFF" /> <!-- 设置按钮文字为白色 -->
+    </LinearLayout>
+
+    <!-- 翻页按钮放在一行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- 左箭头按钮 -->
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:text="◀"
+            android:textColor="#8E8E8E"
+            android:textSize="18sp" />
+
+        <!-- 右箭头按钮 -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:text="▶"
+            android:textColor="#8E8E8E"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

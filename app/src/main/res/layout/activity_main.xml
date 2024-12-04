@@ -1,0 +1,64 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_image">
+
+    <!-- Library Button -->
+
+    <!-- Translate Tool Button -->
+    <Button
+        android:id="@+id/libraryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5C6BC0"
+        android:text="Literature Library"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/translateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/translateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Translate Tool"
+        android:backgroundTint="#42A5F5"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/libraryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/citationButton"/>
+
+    <!-- Citation Tool Button -->
+    <Button
+        android:id="@+id/citationButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Citation Tool"
+        android:backgroundTint="#26A69A"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/translateButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"/>
+
+    <!-- Material Website Button -->
+    <Button
+        android:id="@+id/materialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Literature Material Website"
+        android:backgroundTint="#FFA726"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/citationButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ScholarAid</string>
+    <string name="btn_select_pdf">Select PDF</string>
+</resources>

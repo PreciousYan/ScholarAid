@@ -1,0 +1,11 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="black">#000000</color>
+
+    <!-- 添加这些颜色定义 -->
+    <color name="colorPrimary">#6200EE</color> <!-- 主色 -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- 主色深色 -->
+    <color name="colorAccent">#03DAC5</color> <!-- 强调色 -->
+</resources>
